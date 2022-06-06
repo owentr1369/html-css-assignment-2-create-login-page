@@ -8,9 +8,14 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
-  min-height: 100vh;
+}
+.container {
+  width: 1440px;
   background-image: url("../images/background.png");
   background-size: 1600px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
+  height: inherit;
+  min-height: 100vh;
+  object-fit: cover;
 }
