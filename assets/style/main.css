@@ -25,8 +25,6 @@ body {
   left: 30px;
 }
 .container .signin {
-  max-width: 539px;
-  max-height: 741px;
   background: rgba(255, 255, 255, 0.75);
   border-radius: 40px;
   position: absolute;
@@ -39,9 +37,11 @@ body {
   width: 451px;
   justify-content: space-between;
 }
+
 .container .signin .signin__header .signin__header-left {
   width: 235px;
 }
+
 .container .signin .signin__header .signin__header-left span {
   font-style: normal;
   font-weight: 400;
@@ -52,6 +52,9 @@ body {
 .container .signin .signin__header .signin__header-left span.green {
   color: #779341;
   font-weight: 600;
+}
+.container .signin .signin__header .signin__header-left a {
+  text-decoration: none;
 }
 .container .signin .signin__header .signin__header-left h1 {
   margin: 0;
@@ -77,17 +80,19 @@ body {
 .container .signin .signin__header .signin__header-right span:first-child {
   margin-top: 6px;
 }
+
 .container .signin .signin__header .signin__header-right span a {
   color: #779341;
   text-decoration: none;
 }
 .container .methods {
-  width: 100%;
+  width: 451px;
   display: flex;
   margin-bottom: 49px;
+  /* justify-content: space-between; */
 }
-.container .methods .methods__google {
-  height: 55px;
+.container .methods .methods__google a {
+  height: 56px;
   background: #e9f1ff;
   border-radius: 9px;
   display: flex;
@@ -98,16 +103,22 @@ body {
   line-height: 24px;
   color: #4285f4;
   padding-left: 32px;
-  padding-right: 68px;
+  padding-right: 66px;
   margin-right: 20px;
+  border: none;
+  text-decoration: none;
 }
-.container .methods .methods__google svg {
-  margin-right: 21px;
+.container .methods .methods__google span {
+  margin-left: 21px;
+  width: 153px;
 }
-.container .methods .methods__facebook,
-.container .methods .methods__apple {
-  width: 60px;
-  height: 56px;
+.container .signin .methods .methods__facebook {
+  margin-right: 13px;
+}
+.container .methods .methods__facebook a,
+.container .methods .methods__apple a {
+  min-width: 60px;
+  min-height: 56px;
   background: #ffffff;
   border-radius: 9px;
   display: flex;
@@ -122,6 +133,15 @@ body {
   display: flex;
   flex-direction: column;
 }
+.container .signin .username {
+  margin-bottom: 36px;
+}
+.container .signin .password {
+  margin-bottom: 12px;
+}
+form {
+  width: 451px;
+}
 .container .signin label {
   font-family: "Poppins";
   font-style: normal;
@@ -135,7 +155,6 @@ form input {
   background: #ffffff;
   border: 1px solid #adadad;
   border-radius: 9px;
-  width: 451px;
   height: 57px;
   font-style: normal;
   font-weight: 300;
@@ -148,13 +167,14 @@ form input:focus {
   border: 1px solid #4285f4;
   outline: none !important;
 }
-form input:last-child {
-  margin-bottom: 12px;
+input#username {
+  margin-bottom: none !important;
 }
 .container .signin .signin__form .signin__form-bottom {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  width: 451px;
 }
 .container .signin .signin__form .signin__form-bottom a {
   font-style: normal;
@@ -167,7 +187,7 @@ form input:last-child {
 }
 .container .signin .signin__form .signin__form-bottom button {
   background: #779341;
-  box-shadow: 0px 4px 19px rgba(119, 147, 65, 0.3);
+
   border-radius: 10px;
   padding: 15px 91px;
   font-style: normal;
@@ -177,4 +197,8 @@ form input:last-child {
   color: #ffffff;
   outline: none;
   border: none;
+}
+.container .signin .signin__form .signin__form-bottom button:hover {
+  box-shadow: 0px 4px 19px rgba(119, 147, 65, 0.3);
+  cursor: pointer;
 }
