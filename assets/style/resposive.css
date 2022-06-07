@@ -1,0 +1,138 @@
+@media only screen and (max-width: 799px) and (min-width: 600px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .container .signin {
+    position: relative;
+    width: 60%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    align-self: center;
+  }
+  .container .signin .signin__header {
+    width: 100%;
+  }
+  .container .methods {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .methods .methods__google {
+    width: 60%;
+  }
+  .container .methods .methods__google a {
+    padding: 0;
+    padding-left: 12px;
+  }
+  .container .methods .methods__google a span {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .container .methods .methods__facebook,
+  .container .methods .methods__apple {
+    width: 16%;
+  }
+  .container .signin__form {
+    width: 100%;
+  }
+  .container .signin .signin__form .signin__form-bottom {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .container .logo {
+    position: absolute;
+    top: 26px;
+    left: 26px;
+  }
+  .container .signin {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 44px 26px 79px 26px;
+    margin-top: 78px;
+    height: max-content;
+  }
+  .container .signin .signin__header {
+    width: 274px;
+  }
+  .container .signin .signin__header .signin__header-left {
+    width: 139px;
+  }
+  .signin__header-left-welcome {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .container .signin .signin__header .signin__header-left h1 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 37px;
+  }
+  .container .methods {
+    width: 274px;
+  }
+  .container .methods .methods__google {
+    padding: 0;
+  }
+  .container .methods .methods__google a {
+    padding: 0;
+    width: 178px;
+  }
+  .container .methods .methods__google a svg {
+    width: 18px;
+    height: 18px;
+    margin-left: 24px;
+    margin-right: 12px;
+  }
+  .container .methods .methods__google span {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+  }
+  .container .signin .methods {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .signin .methods .methods__facebook,
+  .container .signin .methods .methods__apple {
+    width: 36px;
+  }
+  .container .signin .methods .methods__facebook a,
+  .container .signin .methods .methods__apple a {
+    width: 36px;
+    min-width: 36px;
+    min-height: 56px;
+  }
+  .container .methods .methods__facebook svg,
+  .container .methods .methods__apple svg {
+    width: 18px;
+    height: 18px;
+  }
+  .signin__form {
+    width: 274px;
+  }
+  .container .signin label {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .container .signin .signin__form .signin__form-bottom {
+    width: 274px;
+  }
+  .container .signin .signin__form .signin__form-bottom button {
+    width: 149px;
+    height: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

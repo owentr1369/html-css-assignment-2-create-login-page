@@ -10,14 +10,14 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .container {
-  width: 1440px;
+  width: 100%;
   background-image: url("../images/background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
   object-fit: cover;
   position: relative;
-  height: 900px;
+  height: 100vh;
 }
 .container .logo {
   position: absolute;
@@ -187,9 +187,10 @@ input#username {
 }
 .container .signin .signin__form .signin__form-bottom button {
   background: #779341;
-
+  width: 236px;
+  height: 54px;
   border-radius: 10px;
-  padding: 15px 91px;
+  padding: auto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
